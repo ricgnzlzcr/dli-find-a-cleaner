@@ -1,0 +1,141 @@
+var appData = {"201158-Martha's Master Cleaners":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":true,
+"ced":true,
+"cpw":true,
+"cpd":true,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201157-Jae K Lee":{
+"membership":"US Cleaner - Budget: Annually",
+"credentials":{
+"award of excellence":true,
+"ced":false,
+"cpw":false,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201156-Laundroville Drycleaners":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":true,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201153-Clean Touch Drycleaners":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":false,
+"cpd":false,
+"hanger recycling program":false
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201152-Sweet Darlin' Dry Cleaning":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":true,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201151-Seaview Drycleaners":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":true,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201150-Brite Drycleaning":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":true,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201149-Parkside Cleaners":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":true,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201147-White Star Cleaners":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":true,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+},
+"201146-Bright White Laundry":{
+"membership":"International Cleaner",
+"credentials":{
+"award of excellence":false,
+"ced":false,
+"cpw":true,
+"cpd":false,
+"hanger recycling program":true
+},
+"locations":[
+"10707 Address Way MD",
+"12322 My Road MD, 20848"
+]
+}
+}
