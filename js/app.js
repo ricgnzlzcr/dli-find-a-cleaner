@@ -27,30 +27,22 @@ app.controller('mainController', function($scope, $location, dataService) {
 	console.log("Main Controller loaded");
 
 	/*** Controller Properties ***/
-	$scope.searchClicked = false;
-	$scope.searchResultsVisible = false;
 	$scope.address = "";
-	$scope.message = "This is the homepage";
 
 	/*** Controller Methods ***/
-	$scope.loadSearchView = function() {
-		console.log("Search button pressed");
-
+	$scope.searchAddress = function() {
 		if ($scope.address !== "") {
-			$scope.searchClicked = true;
-			console.log("Searching for cleaners in " + $scope.address);
-			//dataService.address = $scope.address;
+			dataService.address = $scope.address;
+			$location.path('/results');
 		}
 	};
 
-	$scope.searchAddress = function() {
-		dataService.address = $scope.address;
-		$location.path('/results');
-	};
+	$scope.printJSON = function() {
+		dataService.getData();
+	}
 });
 
 app.controller('resultsController', function($scope, dataService) {
-	$scope.message = "Butthole";
 	$scope.address = dataService.address;
 });
 
@@ -58,4 +50,38 @@ app.controller('resultsController', function($scope, dataService) {
 /***** SERVICES *****/
 app.service('dataService', function($http) {
 	this.address = "";
+
+	this.getData = function() {
+
+		$.ajax({
+		  type: 'GET',
+		  url: 'http://www.dlionline.org/917869828',
+		  dataType: 'json',
+		  contentType: "application/json",
+		  success: function(data) {
+		  	console.log("SUCCESS");
+		    console.log('Success', data);
+		  },
+		  error: function(data) {
+		  	console.log("FAIL");
+		    console.log('Error', data);
+		  }
+		});
+
+		/*
+		$http({
+			method: 'JSONP',
+			url: 'http://www.dlionline.org/917869828'
+		}).then(function successCallback(response) {
+		    // this callback will be called asynchronously
+		    // when the response is available
+		    var data = $.parseJSON(response.data)
+		    console.log(data);
+		  }, function errorCallback(response) {
+		    // called asynchronously if an error occurs
+		    // or server returns response with an error status.
+		    console.error("There was an error getting the JSON data idiot");
+		  }); */
+	}
 });
+
