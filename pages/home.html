@@ -6,16 +6,18 @@
 </div> -->
 
 <nav>
-	<h1 class="text-center nav-logo">Find a Dry Cleaner</h1>
+	<a href="#/"><h1 class="text-center nav-logo">Find a Dry Cleaner</h1></a>
 </nav>
 <div class="jumbotron">
-    <h1 class="jumbotron-copy">Find dry cleaners that invest in quality training and customer service</h1>
-    <form class="form-inline flex-container">
-        <div>
-            <input ng-model="address" type="search" class="form-control search-box" id="search" placeholder="Where do you want to find a dry cleaner?">
-            <button ng-click="searchAddress()" class="btn btn-default search-box-button" type="submit">Search</button>
-        </div>
-    </form>
+	<div id="jumbotron-content">
+	    <h1 class="jumbotron-copy">Find dry cleaners that invest in quality training and customer service</h1>
+	    <form class="form-inline flex-container">
+	        <div>
+	            <input ng-model="address" type="search" class="form-control search-box" id="search" placeholder="Where do you want to find a dry cleaner?">
+	            <button ng-click="searchAddress()" class="btn btn-default search-box-button" type="submit">Search</button>
+	        </div>
+	    </form>
+    </div>
 </div> <!-- ends 'jumbotron' -->
 
 <div class="container-fluid" id="dryclSelectExplanation">

@@ -6,11 +6,25 @@
     outline: 1px red solid;
 }
 
+nav {
+    background: #0c0d0d;
+}
+
+nav h1 {
+    color: #fff;
+    font-family: 'Quicksand', arial, sans-serif;
+    font-weight: normal;
+}
+
 .nav-logo {
-    margin: 0.25em 0 0.25em 0;
-    padding: 0;
+    padding: 0.5em 0;
+    margin: 0;
     border: 0;
     vertical-align: baseline;
+}
+
+a:hover, a:visited, a:link {
+    text-decoration: none;
 }
 
 .flex-container {
@@ -34,11 +48,35 @@
    ========================================================================== */
 
 .jumbotron-copy {
+    font-family: 'Open Sans', arial, sans-serif;
     font-weight: normal;
+    text-align: center;
 }
 
 .jumbotron form div {
     width: 100%;
+}
+
+.jumbotron {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), url(../img/drycleaner.jpg);
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron h1 {
+    color: #fff;
+}
+
+#jumbotron-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+    align-self: center;
 }
 
 
@@ -139,6 +177,8 @@
     /* Style adjustments for viewports that meet the condition */
 }
 
+
+/* REPLACES BOOTSTRAP DEFAULTS */
 @media (min-width: 768px) {
     .form-inline .form-control {
         display: inline-block;
@@ -149,5 +189,6 @@
         width: 70px;
     }
 }
+
 
 
