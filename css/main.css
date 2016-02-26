@@ -79,6 +79,9 @@ a:hover, a:visited, a:link {
     align-self: center;
 }
 
+.description-icon {
+    max-width: 400px;
+}
 
 
 
