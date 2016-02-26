@@ -1,5 +1,27 @@
-<div class="jumbotron text-center">
-    <h1>About Page</h1>
-
-    <p>{{address}}</p>
-</div>
+<section id="searchResults">
+	<h2>Find a Dry Cleaner</h2>
+	<form class="form-inline">
+	    <div>
+	        <input ng-model="address" type="search" class="form-control" id="search" placeholder="Where do you want to find a dry cleaner?">
+	        <button ng-click="searchAddress()" class="btn btn-default" type="submit">Search</button>
+	    </div>
+	</form>
+	<ul>
+		<li ng-repeat="cleaner in cleanerList">
+			<div>
+				<div class="cleanerInfo">
+					<p class="header">Cleaner Name</p>
+					<p>{{cleaner.name}}</p>
+					<p>{{cleaner.locations[0]}}</p>
+				</div> <!-- ends cleanerInfo -->
+				<div class="credentialsList">
+					<ul>
+						<li ng-repeat="credential in cleaner.credentials">
+							{{capCred(credential)}}
+						</li>
+					</ul>
+				</div> <!-- ends credentialsList -->
+			</div>
+		</li>
+	</ul>
+</section>

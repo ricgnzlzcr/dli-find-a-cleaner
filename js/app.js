@@ -43,14 +43,33 @@ app.controller('mainController', function($scope, $location, dataService) {
 });
 
 app.controller('resultsController', function($scope, dataService) {
+	console.log("resultsController loaded");	
+	/*** Controller Properties ***/
 	$scope.address = dataService.address;
+	$scope.cleanerList = appData;
+
+	/*** Controller Methods ***/
+	$scope.capCred = function(phrase) {
+		//Method used to appropriately format credentials. CPW, CPD
+		//should be all caps. Everything else should be just first
+		//letter capitalized
+		if (phrase.length === 3) return phrase.toUpperCase();
+		var words = phrase.split(" ");
+		var capWordsArray = [];
+		for (var i in words) {
+			capWordsArray.push(words[i].charAt(0).toUpperCase() + words[i].slice(1));
+		}
+		return capWordsArray.join(" ");
+	} 
 });
+
 
 
 /***** SERVICES *****/
 app.service('dataService', function($http) {
 	this.address = "";
 
+/*
 	this.getData = function() {
 
 		$.ajax({
@@ -68,7 +87,7 @@ app.service('dataService', function($http) {
 		  }
 		});
 
-		/*
+		
 		$http({
 			method: 'JSONP',
 			url: 'http://www.dlionline.org/917869828'
@@ -81,7 +100,7 @@ app.service('dataService', function($http) {
 		    // called asynchronously if an error occurs
 		    // or server returns response with an error status.
 		    console.error("There was an error getting the JSON data idiot");
-		  }); */
-	}
+		  }); 
+	}*/
 });
 
