@@ -80,7 +80,7 @@ a:hover, a:visited, a:link {
 }
 
 .description-icon {
-    max-width: 250px;
+    max-width: 100px;
 }
 
 #dryclSelectExplanation .row {
@@ -89,9 +89,11 @@ a:hover, a:visited, a:link {
     margin: 0 auto;
     padding-top: 3em;
     padding-bottom: 3em;
-    display: flex;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .row div {
     align-self: center;
@@ -221,9 +223,9 @@ a:hover, a:visited, a:link {
         width: 70px;
     }
 
-    /*.description-icon {
-        margin-top: 2em;
-    } */
+    .description-icon {
+        max-width: 250px;
+    } 
 }
 
 
