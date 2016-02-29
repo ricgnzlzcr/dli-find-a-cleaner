@@ -3,7 +3,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 * {
-    outline: 1px red solid;
+    outline: 1px red solid; 
 }
 
 nav {
@@ -81,6 +81,12 @@ a:hover, a:visited, a:link {
 
 .description-icon {
     max-width: 400px;
+}
+
+#dryclSelectExplanation .row {
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
