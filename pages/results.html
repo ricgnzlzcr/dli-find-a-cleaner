@@ -2,36 +2,86 @@
 	<nav>
 		<a href="#/"><h1 class="text-center nav-logo">Find a Dry Cleaner</h1></a>
 	</nav>
-	<div class="results">
-		<form class="form-inline">
-		    <div>
-		        <input ng-model="address" type="search" class="form-control" id="search" placeholder="Where do you want to find a dry cleaner?">
-		        <button ng-click="searchAddress()" class="btn btn-default" type="submit">Search</button>
-		    </div>
-		</form>
-		<div class="cleanerList">
-			<ul class="list-unstyled">
-				<li ng-repeat="cleaner in cleanerList" class="container-fluid">
-					<div class="row">
-						<div class="cleanerInfo col-xs-6">
-							<p class="header"><strong>Cleaner Name</strong></p>
-							<p>{{cleaner.name}}</p>
-							<p>{{cleaner.locations[0]}}</p>
-							<p>{{cleaner.email}}</p>
-							<p>{{cleaner.website}}</p>
 
-						</div> <!-- ends cleanerInfo -->
-						<div class="credentialsList col-xs-6">
-							<p class="header"><strong>Credentials</strong></p>
-							<ul class="list-unstyled">
-								<li ng-repeat="credential in cleaner.credentials">
-									{{capCred(credential)}}
-								</li>
-							</ul>
-						</div> <!-- ends credentialsList -->
-					</div>
-				</li>
-			</ul>
-		</div> <!-- ends cleanerList -->
-	</div> <!-- ends results -->
+	<div class="row">
+		<div class="results col-xs-12 col-sm-7 col-md-8">
+			<form class="form-inline">
+			    <div>
+			        <input ng-model="address" type="search" class="form-control" id="search" placeholder="Where do you want to find a dry cleaner?">
+			        <button ng-click="searchAddress()" class="btn btn-default" type="submit">Search</button>
+			    </div>
+			</form>
+			<div class="cleanerList">
+				<ul class="list-unstyled">
+					<li ng-repeat="cleaner in cleanerList" class="container-fluid">
+						<div class="row">
+							<div class="cleanerInfo col-xs-6">
+								<p class="header"><strong>Cleaner Name</strong></p>
+								<p>{{cleaner.name}}</p>
+								<p>{{cleaner.locations[0]}}</p>
+								<p>{{cleaner.email}}</p>
+								<p>{{cleaner.website}}</p>
+
+							</div> <!-- ends cleanerInfo -->
+							<div class="credentialsList col-xs-6">
+								<p class="header"><strong>Credentials</strong></p>
+								<ul class="list-unstyled">
+									<li ng-repeat="credential in cleaner.credentials">
+										{{capCred(credential)}}
+									</li>
+								</ul>
+							</div> <!-- ends credentialsList -->
+						</div>
+					</li>
+				</ul>
+			</div> <!-- ends cleanerList -->
+		</div> <!-- ends results -->
+
+		<div class="credLegend hidden-xs col-sm-5 col-md-4">
+			<h3>Credentials Explained</h3>
+			<div class="credBox">
+				<h4>DLI Membership <span><a href="#">Want to Join DLI?</a></span></h4>
+				<p>
+					Hashtag literally echo park, chillwave kogi pork belly drinking vinegar chambray try-hard messenger bag chia scenester cronut hella narwhal. Banjo street art food truck, ethical biodiesel cred vegan authentic tattooed. Gochujang +1 paleo fap narwhal, austin iPhone street art farm-to-table hoodie hammock skateboard fingerstache pitchfork. Four loko whatever pug shabby chic viral. Selvage next level +1, single-origin coffee migas messenger bag try-hard pinterest. Pabst synth actually authentic. PBR&amp;B disrupt DIY banh mi brunch gentrify.
+				</p>
+			</div>
+
+			<div class="credBox">
+				<h4>Award of Excellence</h4>
+				<p>
+					Hashtag literally echo park, chillwave kogi pork belly drinking vinegar chambray try-hard messenger bag chia scenester cronut hella narwhal. Banjo street art food truck, ethical biodiesel cred vegan authentic tattooed. Gochujang +1 paleo fap narwhal, austin iPhone street art farm-to-table hoodie hammock skateboard fingerstache pitchfork. Four loko whatever pug shabby chic viral. Selvage next level +1, single-origin coffee migas messenger bag try-hard pinterest. Pabst synth actually authentic. PBR&amp;B disrupt DIY banh mi brunch gentrify.
+				</p>
+			</div>
+
+			<div class="credBox">
+				<h4>CED: Certified Environmental Dry Cleaner</h4>
+				<p>
+					Hashtag literally echo park, chillwave kogi pork belly drinking vinegar chambray try-hard messenger bag chia scenester cronut hella narwhal. Banjo street art food truck, ethical biodiesel cred vegan authentic tattooed. Gochujang +1 paleo fap narwhal, austin iPhone street art farm-to-table hoodie hammock skateboard fingerstache pitchfork. Four loko whatever pug shabby chic viral. Selvage next level +1, single-origin coffee migas messenger bag try-hard pinterest. Pabst synth actually authentic. PBR&amp;B disrupt DIY banh mi brunch gentrify.
+				</p>
+			</div>
+
+			<div class="credBox">
+				<h4>CPD: Certified Professional Dry Cleaner</h4>
+				<p>
+					Hashtag literally echo park, chillwave kogi pork belly drinking vinegar chambray try-hard messenger bag chia scenester cronut hella narwhal. Banjo street art food truck, ethical biodiesel cred vegan authentic tattooed. Gochujang +1 paleo fap narwhal, austin iPhone street art farm-to-table hoodie hammock skateboard fingerstache pitchfork. Four loko whatever pug shabby chic viral. Selvage next level +1, single-origin coffee migas messenger bag try-hard pinterest. Pabst synth actually authentic. PBR&amp;B disrupt DIY banh mi brunch gentrify.
+				</p>
+			</div>
+
+			<div class="credBox">
+				<h4>CPW: Certified Professional Wet Cleaner</h4>
+				<p>
+					Hashtag literally echo park, chillwave kogi pork belly drinking vinegar chambray try-hard messenger bag chia scenester cronut hella narwhal. Banjo street art food truck, ethical biodiesel cred vegan authentic tattooed. Gochujang +1 paleo fap narwhal, austin iPhone street art farm-to-table hoodie hammock skateboard fingerstache pitchfork. Four loko whatever pug shabby chic viral. Selvage next level +1, single-origin coffee migas messenger bag try-hard pinterest. Pabst synth actually authentic. PBR&amp;B disrupt DIY banh mi brunch gentrify.
+				</p>
+			</div>
+
+			<div class="credBox">
+				<h4>Hanger Recycling Program</h4>
+				<p>
+					Hashtag literally echo park, chillwave kogi pork belly drinking vinegar chambray try-hard messenger bag chia scenester cronut hella narwhal. Banjo street art food truck, ethical biodiesel cred vegan authentic tattooed. Gochujang +1 paleo fap narwhal, austin iPhone street art farm-to-table hoodie hammock skateboard fingerstache pitchfork. Four loko whatever pug shabby chic viral. Selvage next level +1, single-origin coffee migas messenger bag try-hard pinterest. Pabst synth actually authentic. PBR&amp;B disrupt DIY banh mi brunch gentrify.
+				</p>
+			</div>
+
+		</div> <!-- end credLegend -->
+
+	</div> <!-- ends row -->
 </section>
