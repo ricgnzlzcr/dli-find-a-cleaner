@@ -21,13 +21,20 @@
 								<p>City, State</p>
 								<p><a class="dont-break-out" href="#">{{cleaner.email}}</a></p>
 								<p><a class="dont-break-out" href="#">{{cleaner.website}}</a></p>
+								<p>
+									<a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Directions</a>
+								</p>
 
 							</div> <!-- ends cleanerInfo -->
 							<div class="credentialsList col-xs-6">
-								<p class="header"><strong>Credentials</strong></p>
+								<p class="header quicksand-font">Credentials</p>
 								<ul class="list-unstyled">
-									<li>DLI Member</li>
+									<li>
+										<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+										DLI Member
+									</li>
 									<li ng-repeat="credential in cleaner.credentials">
+										<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
 										{{capCred(credential)}}
 									</li>
 								</ul>
@@ -85,4 +92,7 @@
 		</div> <!-- end credLegend -->
 
 	</div> <!-- ends row -->
+	<footer>
+    	<p class="copyright text-center">Copyright &copy; Drycleaning &amp Laundry Institute. All Rights Reserved.</p> 
+    </footer>
 </section>

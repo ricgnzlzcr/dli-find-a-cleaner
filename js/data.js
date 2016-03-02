@@ -27,7 +27,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
-	"name": "Jae K Lee",
+	"name": "Jae Kleaners",
 	"email": "cleaner@email.com",
 	"website": "http://www.website.com"
 	},
