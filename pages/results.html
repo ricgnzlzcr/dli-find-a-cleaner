@@ -5,27 +5,28 @@
 
 	<div class="row">
 		<div class="results col-xs-12 col-sm-7 col-md-8">
-			<form class="form-inline" id="searchResultsPage">
+			<form class="form-inline" id="formResultsPage">
 			    <div>
 			        <input ng-model="address" type="search" class="form-control" placeholder="Where do you want to find a dry cleaner?">
-			        <button ng-click="searchAddress()" class="btn btn-default" type="submit">Search</button>
+			        <button ng-click="searchAddress()" class="btn btn-primary" type="submit">Search</button>
 			    </div>
 			</form>
 			<div class="cleanerList">
 				<ul class="list-unstyled">
 					<li ng-repeat="cleaner in cleanerList" class="container-fluid">
+						<h3 class="quicksand-font">{{cleaner.name}}</h3>
 						<div class="row">
 							<div class="cleanerInfo col-xs-6">
-								<p class="header"><strong>Cleaner Name</strong></p>
-								<p>{{cleaner.name}}</p>
 								<p>{{cleaner.locations[0]}}</p>
-								<p><a href="#">{{cleaner.email}}</a></p>
-								<p><a href="#">{{cleaner.website}}</a></p>
+								<p>City, State</p>
+								<p><a class="dont-break-out" href="#">{{cleaner.email}}</a></p>
+								<p><a class="dont-break-out" href="#">{{cleaner.website}}</a></p>
 
 							</div> <!-- ends cleanerInfo -->
 							<div class="credentialsList col-xs-6">
 								<p class="header"><strong>Credentials</strong></p>
 								<ul class="list-unstyled">
+									<li>DLI Member</li>
 									<li ng-repeat="credential in cleaner.credentials">
 										{{capCred(credential)}}
 									</li>

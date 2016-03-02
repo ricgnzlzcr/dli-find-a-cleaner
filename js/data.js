@@ -8,14 +8,14 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Martha's Master Cleaners",
 	"email": "cleaner@email.com",
 	"website": "http://www.website.com"
 	},
-	"201157-Jae K Lee":{
+	"201157-Jae Cleaners":{
 	"membership":"US Cleaner - Budget: Annually",
 	"credentials":[
 	"ced",
@@ -24,7 +24,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Jae K Lee",
@@ -38,7 +38,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Laundroville Drycleaners",
@@ -55,7 +55,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Clean Touch Drycleaners",
@@ -72,7 +72,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Sweet Darlin' Dry Cleaning",
@@ -89,7 +89,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Seaview Drycleaners",
@@ -106,7 +106,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Brite Drycleaning"
@@ -121,7 +121,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"hanger recycling program"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Parkside Cleaners"
@@ -132,7 +132,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"None"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "White Star Cleaners"
@@ -143,7 +143,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"None"
 	],
 	"locations":[
-	"10707 Address Way MD",
+	"10707 Address Way",
 	"12322 My Road MD, 20848"
 	],
 	"name": "Bright White Laundry"
