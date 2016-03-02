@@ -3,7 +3,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 * {
-   /*outline: 1px red solid;*/
+   outline: 1px red solid;
    font-family: 'Open Sans', arial, sans-serif;
 }
 
@@ -31,6 +31,11 @@ a:hover, a:visited, a:link {
 .flex-container {
     display: flex;
     box-sizing: border-box;
+}
+
+.form-control {
+    display: inline-block;
+    width: calc(100% - 74px);
 }
 
 .search-box {
@@ -164,6 +169,9 @@ footer p {
     text-decoration: none;
 }
 
+#searchResultsPage {
+    margin: 1em 0;
+}
 
 
 
