@@ -11,7 +11,9 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"10707 Address Way MD",
 	"12322 My Road MD, 20848"
 	],
-	"name": "Martha's Master Cleaners"
+	"name": "Martha's Master Cleaners",
+	"email": "cleaner@email.com",
+	"website": "http://www.website.com"
 	},
 	"201157-Jae K Lee":{
 	"membership":"US Cleaner - Budget: Annually",
@@ -25,7 +27,9 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"10707 Address Way MD",
 	"12322 My Road MD, 20848"
 	],
-	"name": "Jae K Lee"
+	"name": "Jae K Lee",
+	"email": "cleaner@email.com",
+	"website": "http://www.website.com"
 	},
 	"201156-Laundroville Drycleaners":{
 	"membership":"International Cleaner",
@@ -37,7 +41,9 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"10707 Address Way MD",
 	"12322 My Road MD, 20848"
 	],
-	"name": "Laundroville Drycleaners"
+	"name": "Laundroville Drycleaners",
+	"email": "cleaner@email.com",
+	"website": "http://www.website.com"
 	},
 	"201153-Clean Touch Drycleaners":{
 	"membership":"International Cleaner",
@@ -52,7 +58,9 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"10707 Address Way MD",
 	"12322 My Road MD, 20848"
 	],
-	"name": "Clean Touch Drycleaners"
+	"name": "Clean Touch Drycleaners",
+	"email": "cleaner@email.com",
+	"website": "http://www.website.com"
 	},
 	"201152-Sweet Darlin' Dry Cleaning":{
 	"membership":"International Cleaner",
@@ -67,7 +75,9 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"10707 Address Way MD",
 	"12322 My Road MD, 20848"
 	],
-	"name": "Sweet Darlin' Dry Cleaning"
+	"name": "Sweet Darlin' Dry Cleaning",
+	"email": "cleaner@email.com",
+	"website": "http://www.website.com"
 	},
 	"201151-Seaview Drycleaners":{
 	"membership":"International Cleaner",
@@ -82,7 +92,9 @@ var appData = {"201158-Martha's Master Cleaners":{
 	"10707 Address Way MD",
 	"12322 My Road MD, 20848"
 	],
-	"name": "Seaview Drycleaners"
+	"name": "Seaview Drycleaners",
+	"email": "cleaner@email.com",
+	"website": "http://www.website.com"
 	},
 	"201150-Brite Drycleaning":{
 	"membership":"International Cleaner",

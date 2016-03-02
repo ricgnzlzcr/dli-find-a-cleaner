@@ -1,30 +1,37 @@
 <section id="searchResults">
-	<h1>Find a Dry Cleaner</h1>
-	<form class="form-inline">
-	    <div>
-	        <input ng-model="address" type="search" class="form-control" id="search" placeholder="Where do you want to find a dry cleaner?">
-	        <button ng-click="searchAddress()" class="btn btn-default" type="submit">Search</button>
-	    </div>
-	</form>
+	<nav>
+		<a href="#/"><h1 class="text-center nav-logo">Find a Dry Cleaner</h1></a>
+	</nav>
 	<div class="results">
-		<ul class="list-unstyled">
-			<li ng-repeat="cleaner in cleanerList" class="container-fluid">
-				<div class="row">
-					<div class="cleanerInfo col-xs-6">
-						<p class="header"><strong>Cleaner Name</strong></p>
-						<p>{{cleaner.name}}</p>
-						<p>{{cleaner.locations[0]}}</p>
-					</div> <!-- ends cleanerInfo -->
-					<div class="credentialsList col-xs-6">
-						<p class="header"><strong>Credentials</strong></p>
-						<ul class="list-unstyled">
-							<li ng-repeat="credential in cleaner.credentials">
-								{{capCred(credential)}}
-							</li>
-						</ul>
-					</div> <!-- ends credentialsList -->
-				</div>
-			</li>
-		</ul>
-	</div>
+		<form class="form-inline">
+		    <div>
+		        <input ng-model="address" type="search" class="form-control" id="search" placeholder="Where do you want to find a dry cleaner?">
+		        <button ng-click="searchAddress()" class="btn btn-default" type="submit">Search</button>
+		    </div>
+		</form>
+		<div class="cleanerList">
+			<ul class="list-unstyled">
+				<li ng-repeat="cleaner in cleanerList" class="container-fluid">
+					<div class="row">
+						<div class="cleanerInfo col-xs-6">
+							<p class="header"><strong>Cleaner Name</strong></p>
+							<p>{{cleaner.name}}</p>
+							<p>{{cleaner.locations[0]}}</p>
+							<p>{{cleaner.email}}</p>
+							<p>{{cleaner.website}}</p>
+
+						</div> <!-- ends cleanerInfo -->
+						<div class="credentialsList col-xs-6">
+							<p class="header"><strong>Credentials</strong></p>
+							<ul class="list-unstyled">
+								<li ng-repeat="credential in cleaner.credentials">
+									{{capCred(credential)}}
+								</li>
+							</ul>
+						</div> <!-- ends credentialsList -->
+					</div>
+				</li>
+			</ul>
+		</div> <!-- ends cleanerList -->
+	</div> <!-- ends results -->
 </section>
