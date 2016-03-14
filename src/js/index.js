@@ -3,12 +3,10 @@
 var express = require('express');
 var app = express();
 
+//Load Angular application from 'public' folder
 var path = '../../public';
-var route = __dirname + '/' + path
-
 app.use('/', express.static(path));
 
 app.listen(process.env.PORT, function() {
-    console.log(route);
-    console.log("Server loaded");
+    console.log("Find a dry cleaner server loaded");
 });
