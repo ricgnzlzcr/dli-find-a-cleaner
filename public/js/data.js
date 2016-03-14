@@ -128,9 +128,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	},
 	"201147-White Star Cleaners":{
 	"membership":"International Cleaner",
-	"credentials":[
-	"None"
-	],
+	"credentials":[],
 	"locations":[
 	"10707 Address Way",
 	"12322 My Road MD, 20848"
@@ -139,9 +137,7 @@ var appData = {"201158-Martha's Master Cleaners":{
 	},
 	"201146-Bright White Laundry":{
 	"membership":"International Cleaner",
-	"credentials":[
-	"None"
-	],
+	"credentials":[],
 	"locations":[
 	"10707 Address Way",
 	"12322 My Road MD, 20848"
