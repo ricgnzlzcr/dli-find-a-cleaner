@@ -1,0 +1,25 @@
+{
+  "name": "find-a-dry-cleaner",
+  "version": "1.0.0",
+  "description": "DLI's Find A Drycleaner Website",
+  "main": "src/js/lsindex.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricgnzlzcr/dli-find-a-cleaner.git"
+  },
+  "author": "Ricardo Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricgnzlzcr/dli-find-a-cleaner/issues"
+  },
+  "homepage": "https://github.com/ricgnzlzcr/dli-find-a-cleaner#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
